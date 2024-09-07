@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gilmar Ferrari Filho">
+    <meta property="og:title" content="Gilmar Ferrari Filho | Portfolio" />
+    <meta property="og:description" content="Gilmar Ferrari Filho's portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gilmarferrari.github.io/portfolio/" />
+    <meta property="og:image" content="https://gilmarferrari.github.io/portfolio/assets/puzzle-alt.png" />
+    <title>Gilmar Ferrari Filho | Projects</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../root.css">
+    <link rel="icon" href="../assets/puzzle.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../navigation.js"></script>
+    <script src="../navigation-bar/navigation-bar.js" defer></script>
+</head>
+
+<body>
+    <div id="loading-container">
+        <img class="loading-icon" src="../assets/code.png">
+    </div>
+    <header>
+        <navigation-bar></navigation-bar>
+    </header>
+    <main id="main">
+        <section id="info">
+            <label class="title">Projects</label>
+            <label class="subtitle">Hop in and let's explore this universe.</label>
+            <span class="bouncing-ball"></span>
+        </section>
+        <section class="project" id="collapsus-lost-legacy">
+            <div class="showcase">
+                <label class="title">Collapsus: Lost Legacy</label>
+            </div>
+            <div class="details info-left">
+                <div class="info slide-left">
+                    <label class="title">About the project</label>
+                    <label class="content">Initially planned to be a 2D scape room game, where a variety of puzzles had
+                        to be solved in order to reach the next level, it eventually became more of playground than an
+                        actual game.
+                        <br><br>
+                        As I was at the beginning of my career, it was a really ambitious game for the time. The
+                        more I learned, the more I wanted to create and implement new features, which ultimately
+                        resulted in the saturation of experimental mechanics.
+                    </label>
+                    <a href="#">See more</a>
+                </div>
+                <img class="slide-right" src="../assets/collapsus-lost-legacy-alt.png">
+            </div>
+        </section>
+        <section class="project" id="async">
+            <div class="showcase">
+                <label class="title">Async</label>
+            </div>
+            <div class="details info-right">
+                <img class="slide-left" src="../assets/async.png">
+                <div class="info slide-right">
+                    <label class="title">About the project</label>
+                    <label class="content">Async is a web application developed with Angular.
+                        <br><br>
+                        Inspired in Postman, the purpose of this tool was to provide a simple and
+                        customized way of making HTTP requests — at least I thought it was. Turns out I was wrong.
+                        <br><br>
+                        At the moment, it represents nothing more than... legacy, I guess.
+                    </label>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="plan-it">
+            <div class="showcase">
+                <label class="title">Plan It</label>
+            </div>
+            <div class="details info-left">
+                <div class="info slide-left">
+                    <label class="title">About the project</label>
+                    <label class="content">Have you ever downloaded a budget app, hoping it would be highly
+                        customizable, free to use and, above all, free of ads? Well, I ask you now: how did it turn out?
+                        <br><br>
+                        With Plan It, you can have the whole package!
+                        <br><br>
+                        And who knows, maybe you even get to be a part of it, as Plan It is an open-source app.
+                    </label>
+                    <a href="#">See more</a>
+                </div>
+                <img class="slide-right" src="../assets/plan-it.png">
+            </div>
+        </section>
+        <section class="project" id="conduit-api">
+            <div class="showcase">
+                <label class="title">Conduit</label>
+            </div>
+            <div class="details info-right">
+                <img class="slide-left" src="../assets/conduit-api.png">
+                <div class="info slide-right">
+                    <label class="title">About the project</label>
+                    <label class="content">Conduit is an API developed in .NET, designed for real-time messaging
+                        applications.
+                        <br><br>
+                        This was also a very ambitious project, as it was the first real-time communication API I had
+                        ever developed.
+                    </label>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver((e) => {
+            e.forEach(x => {
+                if (x.isIntersecting) {
+                    x.target.classList.add("in-view");
+                } else {
+                    x.target.classList.remove("in-view");
+                }
+            });
+        });
+
+        const infoLeft = document.querySelector('.slide-left');
+
+        const infoLeftElements = document.querySelectorAll('.slide-left');
+        const infoRightElements = document.querySelectorAll('.slide-right');
+
+        infoLeftElements.forEach(e => {
+            observer.observe(e);
+        });
+
+        infoRightElements.forEach(e => {
+            observer.observe(e);
+        });
+    });
+</script>

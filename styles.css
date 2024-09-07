@@ -1,0 +1,117 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    cursor: default;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 90px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 150px;
+    min-height: calc(100% - 150px);
+}
+
+#profile label {
+    max-width: 60%;
+    text-align: center;
+}
+
+#profile .title {
+    font-size: 20px;
+}
+
+#profile .subtitle {
+    font-size: 38px;
+    color: var(--low-white);
+}
+
+#about {
+    background-color: var(--alternative-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+#about label {
+    max-width: 60%;
+    text-align: center;
+}
+
+#about .title {
+    font-size: 38px;
+    padding: 15px 0;
+}
+
+#about .subtitle {
+    font-size: 20px;
+    color: var(--low-white);
+    max-width: 60%;
+}
+
+#about .content {
+    font-size: 15px;
+    color: var(--low-white);
+    line-height: 1.5;
+}
+
+#beliefs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+#beliefs label {
+    max-width: 60%;
+    text-align: center;
+}
+
+#beliefs .title {
+    font-size: 38px;
+    padding: 15px 0;
+}
+
+#beliefs .content {
+    font-size: 15px;
+    color: var(--low-white);
+}
+
+#more {
+    background-color: var(--alternative-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+#more .title {
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+#more .content {
+    font-size: 15px;
+    color: var(--low-white);
+}
+
+@media (max-width: 400px) {
+    #profile label,
+    #about label,
+    #beliefs label,
+    #more label {
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,60 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    cursor: default;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 90px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 150px;
+    min-height: calc(100% - 150px);
+}
+
+#contact label {
+    max-width: 60%;
+    text-align: center;
+}
+
+#contact .title {
+    font-size: 38px;
+    margin: 40px 0;
+}
+
+#contact .button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact .arrow {
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    opacity: 0;
+    transition-property: width height margin-left opacity;
+    transition-duration: 300ms;
+}
+
+#contact .button:hover .arrow {
+    width: 24px;
+    height: 24px;
+    margin-left: 0;
+    margin-right: -5px;
+    opacity: 1;
+    transition-property: width height margin-left margin-right opacity;
+    transition-duration: 300ms;
+}

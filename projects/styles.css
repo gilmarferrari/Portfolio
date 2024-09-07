@@ -1,0 +1,154 @@
+body {
+    overflow-x: hidden;
+}
+
+main {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    cursor: default;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 90px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    max-width: 80%;
+}
+
+#info label {
+    text-align: center;
+}
+
+#info .title {
+    font-size: 38px;
+}
+
+#info .subtitle {
+    font-size: 20px;
+    color: var(--low-white);
+}
+
+.project {
+    min-height: 100%;
+}
+
+.project .showcase label {
+    max-width: 80%;
+    text-align: center;
+}
+
+.project img {
+    width: 300px;
+    object-fit: cover;
+    opacity: 30%;
+}
+
+.project .showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.project .details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.project .details label {
+    text-align: justify;
+}
+
+.project .details a {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.project .details .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    max-width: 35%;
+}
+
+.project .title {
+    font-size: 38px;
+    padding: 15px 0;
+}
+
+.project .content {
+    font-size: 15px;
+    color: var(--low-white);
+}
+
+.project .info-left {
+    justify-content: flex-start;
+}
+
+.project .info-left .info {
+    margin-left: 15%;
+}
+
+.project .info-left img {
+    margin-left: 10%;
+}
+
+.project .info-right {
+    justify-content: flex-end;
+}
+
+.project .info-right .info {
+    margin-right: 15%;
+}
+
+.project .info-right img {
+    margin-right: 10%;
+}
+
+@media screen and (max-width: 850px) {
+    .project .details .info {
+        max-width: 70%;
+    }
+
+    .project .details .title {
+        text-align: start !important;
+    }
+
+    .project img {
+        display: none;
+    }
+}
+
+#collapsus-lost-legacy,
+#collapsus-lost-legacy .showcase,
+#collapsus-lost-legacy .details,
+#plan-it,
+#plan-it .showcase,
+#plan-it .details {
+    background-color: var(--alternative-background-color);
+}
+
+#async,
+#async .showcase,
+#async .details,
+#conduit-api,
+#conduit-api .showcase,
+#conduit-api .details {
+    background-color: var(--background-color);
+}
