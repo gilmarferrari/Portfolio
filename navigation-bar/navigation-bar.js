@@ -21,7 +21,7 @@ class NavigationBar extends HTMLElement {
                     <a href="https://gilmarferrari.github.io/portfolio">PROFILE</a>
                     <a href="https://gilmarferrari.github.io/portfolio/projects">PROJECTS</a>
                     <a href="https://gilmarferrari.github.io/portfolio/timeline">TIMELINE</a>
-                    <a href="https://gilmarferrari.github.io/portfolio/technologies">TECHS</a>
+                    <a href="https://gilmarferrari.github.io/portfolio/techs">TECHS</a>
                     <a href="https://gilmarferrari.github.io/portfolio/contact">CONTACT</a>
                 </div>
             </nav>
