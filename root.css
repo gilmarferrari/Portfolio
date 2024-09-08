@@ -20,7 +20,6 @@ body {
 
 main {
     width: 100vw;
-    height: fit-content;
     min-height: 100vh;
     background-color: var(--background-color);
     cursor: default;
@@ -30,6 +29,14 @@ main {
     margin-bottom: 90px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+#main {
+    width: inherit;
+    height: 100vh;
+    overflow-x: inherit;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 section {

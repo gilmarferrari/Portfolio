@@ -6,6 +6,7 @@
     margin-top: 150px;
     height: calc(100vh - 150px);
     max-width: 80%;
+    margin-left: 10%;
 }
 
 #info label {
@@ -29,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .timeline {
