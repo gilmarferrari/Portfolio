@@ -1,0 +1,92 @@
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    max-width: 80%;
+}
+
+#info label {
+    text-align: center;
+}
+
+#info .title {
+    font-size: 38px;
+}
+
+#info .subtitle {
+    font-size: 20px;
+    color: var(--low-white);
+}
+
+#timeline {
+    height: fit-content;
+    min-height: 100vh;
+    background-color: var(--alternative-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    min-width: 80%;
+}
+
+.timeline-period {
+    line-height: 30px;
+    border-right: 1px solid var(--white);
+    width: 15%;
+    padding: 30px;
+    text-align: right;
+}
+
+.timeline-period label {
+    font-size: 15px;
+}
+
+.timeline .dot {
+    margin: 42px -3px 0px -5px;
+    padding: 3px;
+    height: 1px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--white);
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    line-height: 30px;
+    margin-right: 30px;
+}
+
+.timeline-item h1 {
+    font-size: 15px;
+    color: var(--accent-color);
+}
+
+.timeline-item label {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.timeline-item ul li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    color: var(--white);
+}
+
+@media screen and (max-width: 470px) {
+    #timeline {
+        align-items: flex-start;
+    }
+}
