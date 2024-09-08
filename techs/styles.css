@@ -1,0 +1,87 @@
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+    max-width: 80%;
+}
+
+#info label {
+    text-align: center;
+}
+
+#info .title {
+    font-size: 38px;
+}
+
+#info .subtitle {
+    font-size: 20px;
+    color: var(--low-white);
+}
+
+#techs {
+    height: fit-content;
+    min-height: 100vh;
+    background-color: var(--alternative-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    width: fit-content;
+    margin: 40px 0;
+}
+
+.card {
+    padding: 10px 15px 10px 15px;
+    color: var(--white);
+    background: linear-gradient(90deg, var(--alternative-block-color), var(--block-color));
+    border-radius: 5px;
+    width: 180px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0px -40px 0px -40px;
+    z-index: 0;
+    transition-property: transform margin-right;
+    transition-duration: 300ms;
+    transform: rotateZ(0deg);
+    margin-right: -40px;
+    align-content: flex-start;
+}
+
+.card:hover {
+    transform: rotateZ(5deg);
+    margin-right: 10px;
+    margin-top: -40px;
+    transition: transform 300ms, margin-right 300ms, margin-top 300ms;
+}
+
+.card .chip {
+    padding: 2px 5px 2px 5px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--block-color), transparent);
+    font-size: 14px;
+    gap: 10px;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 470px) {
+    .card-deck {
+        margin: 40px;
+    }
+}
