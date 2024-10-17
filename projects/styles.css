@@ -119,7 +119,10 @@
 #collapsus-lost-legacy .details,
 #plan-it,
 #plan-it .showcase,
-#plan-it .details {
+#plan-it .details,
+#borealis,
+#borealis .showcase,
+#borealis .details {
     background-color: var(--alternative-background-color);
 }
 
@@ -130,4 +133,8 @@
 #conduit-api .showcase,
 #conduit-api .details {
     background-color: var(--background-color);
+}
+
+#borealis img {    
+    image-rendering: pixelated;
 }
