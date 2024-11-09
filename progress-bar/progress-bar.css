@@ -1,0 +1,33 @@
+ul.progress-bar {
+    height: fit-content;
+    list-style: none;
+    margin: 0 0 6px 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+ul.progress-bar li {
+    background: var(--accent-color);
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+ul.progress-bar li.break~li {
+    background: var(--gray);
+}
+
+ul.progress-bar li.break~li::after {
+    height: 0;
+}
+
+.progress-percentage {
+    margin-top: 8px;
+    font-size: 14px;
+}
