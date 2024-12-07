@@ -29,7 +29,7 @@ class ProgressBar extends HTMLElement {
             <ul class="progress-bar">
                 ${listItems}
             </ul>
-            <label class="progress-percentage">${this.progress}%</label>
+            <label class="progress-percentage">${this.levels[dotsFilled]}</label>
         `;
     }
 
@@ -40,6 +40,8 @@ class ProgressBar extends HTMLElement {
     set progress(value) {
         this.setAttribute('progress', value);
     }
+
+    levels = ['Beginner', 'Elementary', 'Intermediate', 'Advanced', 'Proficient'];
 }
 
 customElements.define('progress-bar', ProgressBar);
