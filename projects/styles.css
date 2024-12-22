@@ -131,10 +131,13 @@
 #async .details,
 #conduit-api,
 #conduit-api .showcase,
-#conduit-api .details {
+#conduit-api .details,
+#archive,
+#archive .showcase,
+#archive .details {
     background-color: var(--background-color);
 }
 
-#borealis img {    
+#borealis img {
     image-rendering: pixelated;
 }
