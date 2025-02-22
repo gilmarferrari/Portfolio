@@ -1,12 +1,11 @@
 #info {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     margin-top: 150px;
     height: calc(100vh - 150px);
-    max-width: 80%;
-    margin-left: 10%;
 }
 
 #info label {

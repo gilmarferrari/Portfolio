@@ -177,26 +177,36 @@ label {
 }
 
 .bouncing-ball {
-    position: sticky;
+    position: absolute;
     width: 40px;
     height: 40px;
-    top: calc(100% - 44px);
-    margin-bottom: 4px;
-    animation: bounce 800ms infinite ease-out;
     background-image: url(assets/square.png);
     background-size: contain;
     border-radius: 50%;
+    animation: bounce 3s linear infinite;
 }
 
 @keyframes bounce {
 
     0%,
     100% {
-        transform: translateY(0);
+        left: 0;
+        bottom: 250px;
     }
 
-    60% {
-        transform: translateY(-50px);
+    25% {
+        left: 60vw;
+        bottom: 0;
+    }
+
+    50% {
+        left: calc(100vw - 40px);
+        bottom: 250px;
+    }
+
+    75% {
+        left: 40vw;
+        bottom: 0;
     }
 }
 
