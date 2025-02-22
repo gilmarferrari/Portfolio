@@ -55,6 +55,7 @@
 .project .details a {
     text-align: justify;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .project .details .info {
@@ -98,6 +99,20 @@
 
 .project .info-right img {
     margin-right: 10%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.actions span {
+    text-align: justify;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 850px) {
